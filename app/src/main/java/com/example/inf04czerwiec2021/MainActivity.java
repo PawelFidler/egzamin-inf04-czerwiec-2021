@@ -28,13 +28,11 @@ public class MainActivity extends AppCompatActivity {
         Button submitButton =findViewById(R.id.button);
         submitButton.setOnClickListener(v -> Submited() );
 
-
-
         }
         public void Submited(){
         TextView text =(TextView)findViewById(R.id.textView6);
-        text.setText("Witaj");
-    }
+            text.setText("Witaj");
+        }
 
 
 }
