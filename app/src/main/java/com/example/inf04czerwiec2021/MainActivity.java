@@ -34,7 +34,10 @@ public class MainActivity extends AppCompatActivity {
             TextView text =(TextView)findViewById(R.id.textView6);
             EditText imejl = findViewById(R.id.editTextTextEmailAddress);
             String elejl = imejl.getText().toString();
-            text.setText("Witaj "+elejl);
+            if(elejl.contains("@") && elejl.contains(".")){
+                text.setText("Witaj "+elejl);
+            }
+
         }
 
 
