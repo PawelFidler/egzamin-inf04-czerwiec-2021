@@ -25,17 +25,16 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-    }
+        Button submitButton =findViewById(R.id.button);
+        submitButton.setOnClickListener(v -> Submited() );
 
-    Button submitButton = (Button)findViewById(R.id.button);
-    submitButton.setOnClickListener(this);
 
-    TextView text =(TextView)findViewById(R.id.textView6);
-    @Override
-    public void onClick(View view){
-        if(view.getId()==R.id.button){
-            text.setText("Witaj");
+
         }
+        public void Submited(){
+        TextView text =(TextView)findViewById(R.id.textView6);
+        text.setText("Witaj");
     }
+
 
 }
