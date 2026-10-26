@@ -34,8 +34,20 @@ public class MainActivity extends AppCompatActivity {
             TextView text =(TextView)findViewById(R.id.textView6);
             EditText imejl = findViewById(R.id.editTextTextEmailAddress);
             String elejl = imejl.getText().toString();
+
+            EditText pas1 = findViewById(R.id.editTextTextPassword);
+            String pasword1 = pas1.getText().toString();
+            EditText pas2 = findViewById(R.id.editTextTextPassword2);
+            String pasword2 = pas2.getText().toString();
+
             if(elejl.contains("@") && elejl.contains(".")){
-                text.setText("Witaj "+elejl);
+                if(pasword1 == pasword2){
+                    text.setText("Witaj "+elejl);
+                }else{
+                    text.setText("hasla muszą być takie same");
+                }
+            }else{
+                text.setText("Email niepoprawny");
             }
 
         }
