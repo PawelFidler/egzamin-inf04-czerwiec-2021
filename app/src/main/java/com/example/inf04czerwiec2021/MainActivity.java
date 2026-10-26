@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             String pasword2 = pas2.getText().toString();
 
             if(elejl.contains("@") && elejl.contains(".")){
-                if(pasword1 == pasword2){
+                if(pasword1.equals(pasword2)){
                     text.setText("Witaj "+elejl);
                 }else{
                     text.setText("hasla muszą być takie same");
