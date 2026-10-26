@@ -3,6 +3,7 @@ package com.example.inf04czerwiec2021;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -30,8 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         }
         public void Submited(){
-        TextView text =(TextView)findViewById(R.id.textView6);
-            text.setText("Witaj");
+            TextView text =(TextView)findViewById(R.id.textView6);
+            EditText imejl = findViewById(R.id.editTextTextEmailAddress);
+            String elejl = imejl.getText().toString();
+            text.setText("Witaj "+elejl);
         }
 
 
